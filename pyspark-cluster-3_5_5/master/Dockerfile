@@ -1,4 +1,4 @@
-FROM easewithdata/spark-base:3.5.5
+FROM deepak/spark-base:3.5.5
 
 LABEL maintainer="Ease With Data <easewithdata@gmail.com> (Original 3.3.0 version published by bde2020)"
 

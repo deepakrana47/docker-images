@@ -1,5 +1,27 @@
 # Spark Cluster with Jupyter v3.5.5
 
+### Build the base image for spark and spark-jupyter
+#### Build base image
+```shell
+cd base
+sudo docker image build . -t deepak/spark-base:3.5.5
+```
+#### Build jupyter image
+```shell
+cd jupyter
+sudo docker image build . -t deepak/spark-jupyter:3.5.5
+```
+#### Build master image
+```shell
+cd master
+sudo docker image build . -t deepak/spark-master:3.5.5
+```
+#### Build worker image
+```shell
+cd worker
+sudo docker image build . -t deepak/spark-worker:3.5.5
+```
+
 **Apache Spark version 3.5.5** Cluster with 1 master, 2 worker nodes & PySpark Jupyter Lab.
 
 ### To setup the complete Cluster in docker
